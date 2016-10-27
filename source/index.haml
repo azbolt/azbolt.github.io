@@ -1,0 +1,296 @@
+---
+title: Azbolt
+---
+#navbar.navbar.navbar-inverse
+  .fixed-container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#home"}
+        %img#azbolt-logo{:alt => "Azbolt Logo", :src => "assets/images/azbolt-logo.png"}/
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav
+        %li
+          %a{:href => "#about"}
+            %span.glyphicon.glyphicon-user>
+            Team
+        %li
+          %a{:href => "#process"}
+            %i.icon-gear>
+            Process
+        %li
+          %a{:href => "#work"}
+            %span.glyphicon.glyphicon-briefcase>
+            Work
+        %li
+          %a{:href => "#pricing"}
+            %i.icon-dollar>
+            Pricing
+        %li
+          %a{:href => "#clients"}
+            %i.icon-comments>
+            Clients
+        %li
+          %a{:href => "#contact"}
+            %i.icon-inbox>
+            Contact
+    / /.nav-collapse
+/ Features Section
+#home.section.welcome
+  %img.background{:alt => "stream blurred", :src => "assets/images/stream_blur2.jpg"}/
+  .container
+    .content.center
+      %span.logo.glyphicon.glyphicon-flash
+      %h1 We Build Kickass Digital Products
+      .text-center
+        %h4 A software development agency that builds custom web and mobile applications for our clients
+      %a.scroll-down.btn{:href => "#contact"} REQUEST A FREE PRODUCT CONSULTATION
+      %br/
+      %a.scroll-down{:href => "#about"}
+        %i.icon-angle-down
+    / /.content
+/ /.container
+/ About Section
+#about.section
+  .fixed-container
+    .content.team
+      %h1 Meet the Team
+      .row
+        .col-md-6.col-sm-6.col-xs-12
+          %h2 Adrian Ching
+          %h3.italic Developer
+          .portrait
+            %img{:alt => "Adrian Ching", :src => "assets/images/adrianching.jpg"}/
+          %p Ruby on Rails/React Native Developer.
+          .social-media
+            %a{"data-toggle" => "tooltip", :href => "https://twitter.com/adrianchinghc", :title => "Twitter"}
+              %i.icon-twitter
+            %a{"data-toggle" => "tooltip", :href => "https://github.com/adrianchinghc", :title => "Github"}
+              %i.icon-github
+        .col-md-6.col-sm-6.col-xs-12
+          %h2 Tan Chin Loong
+          %h3.italic Developer
+          .portrait
+            %img{:alt => "Chin Loong", :src => "assets/images/chinloong.jpeg"}/
+          %p Ruby on Rails/React Native Developer.
+          .social-media
+            %a{"data-toggle" => "tooltip", :href => "https://twitter.com/chinloong91", :title => "Twitter"}
+              %i.icon-twitter
+            %a{"data-toggle" => "tooltip", :href => "https://github.com/chinloong91", :title => "Github"}
+              %i.icon-github
+/ /.container
+/ process Section
+/ Image background parallax
+#process.section.image
+  .background.parallax
+  .fixed-container
+    .content.process
+      %h1 Our Process
+      .row
+        .empty.col-md-2.col-sm-3.col-xs-12
+        .col-md-8.col-sm-6.col-xs-12
+          %h3.text-center We offer process that range from Website Design to Branding. Just check out all of our process below to get a general idea of what we are capable of. We have three people on our team and we will try to accommodate your request.
+        .empty.col-md-2.col-sm-3.col-xs-12
+      .row
+        .col-md-3.col-sm-3.col-xs-6
+          .service-icon
+            %i.icon-search{"data-toggle" => "tooltip", :title => "Professional application planning, including mockups, wireframes, and designs."}
+            %span RESEARCH
+        .col-md-3.col-sm-3.col-xs-6
+          .service-icon
+            %i.icon-code{"data-toggle" => "tooltip", :title => "Clean, Modern and Responsive Web Design."}
+            %span DEVELOPMENT
+        .col-md-3.col-sm-3.col-xs-6
+          .service-icon
+            %i.icon-check{"data-toggle" => "tooltip", :title => "We can help create a consistent media brand including logos, product design, website branding and more."}
+            %span TESTING
+        .col-md-3.col-sm-3.col-xs-6
+          .service-icon
+            %i.icon-rocket{"data-toggle" => "tooltip", :title => "Web application security. We can help protect your application from attacks."}
+            %span PRODUCTION
+/ Portfolio Section
+/ On smaller devices, portfolio becomes auto height and no fixed
+#work.section.white
+  .fixed-container
+    .content
+      %h1 Our Work
+      / FILTER CONTROLS
+      .controls
+        %a.btn.filter{"data-filter" => "all"} SHOW ALL
+        %a.btn.filter{"data-filter" => "category_1"} CATEGORY 1
+        %a.btn.filter{"data-filter" => "category_2"} CATEGORY 2
+        %a.btn.filter{"data-filter" => "category_3"} CATEGORY 3
+        %a.btn.filter{"data-filter" => "category_1 category_3"} CATEGORY 1 &amp; 3
+  .gallery.row
+    %ul
+      %li.col-md-4.col-sm-4.col-xs-12.mix.category_1{"data-cat" => "1"}
+        %a.mix-cover{:href => "#"}
+          %img{:alt => "sintel bedroom", :src => "assets/images/sintel-bedroom.png"}/
+          %span.cover
+            %span Sintel Bedroom
+      %li.col-md-4.col-sm-4.col-xs-12.mix.category_1{"data-cat" => "1"}
+        %a.mix-cover{:href => "#"}
+          %img{:alt => "sintel snowscape", :src => "assets/images/sintel-snowscape.jpg"}/
+          %span.cover
+            %span Snowscape
+      %li.col-md-4.col-sm-4.col-xs-12.mix.category_2{"data-cat" => "3"}
+        %a.mix-cover{:href => "#"}
+          %img{:alt => "ishtar alley", :src => "assets/images/ishtar-alley.png"}/
+          %span.cover
+            %span Ishtar Alley
+      %li.col-md-4.col-sm-4.col-xs-12.mix.category_2{"data-cat" => "2"}
+        %a.mix-cover{:href => "#"}
+          %img{:alt => "sintel tree", :src => "assets/images/sintel-tree.jpg"}/
+          %span.cover
+            %span Sintel Tree
+      %li.col-md-4.col-sm-4.col-xs-12.mix.category_3{"data-cat" => "3"}
+        %a.mix-cover{:href => "#"}
+          %img{:alt => "ishtar wallpaper", :src => "assets/images/sintel-wallpaper-ishtar.jpg"}/
+          %span.cover
+            %span Ishtar Wallpaper
+      %li.col-md-4.col-sm-4.col-xs-12.mix.category_3{"data-cat" => "3"}
+        %a.mix-cover{:href => "#"}
+          %img{:alt => "sintel town concept", :src => "assets/images/sintel-town-concept.jpg"}/
+          %span.cover
+            %span Sintel Town Concept
+  / GALLERY
+/ /.container
+/ Pricing Section
+#pricing.section.white
+  .fixed-container
+    .content
+      %h1 Pricing Table
+      .pricing
+        .row
+          .col-md-4.col-sm-4.col-xs-12
+            .wrapper
+              %h3.text-center
+                %span.glyphicon.glyphicon-leaf>
+                Single Application
+              %table.table
+                %thead
+                  %tr
+                    %th
+                      %span.price
+                        %i.icon-dollar>
+                        9
+                %tbody
+                  %tr
+                    %td One Time Installation
+                  %tr
+                    %td No reselling
+                  %tr
+                    %td Free Email Support
+                  %tr
+                    %td
+                      %a.btn{:href => "#"} PURCHASE NOW
+          .col-md-4.col-sm-4.col-xs-12
+            .wrapper
+              %h3.text-center
+                %span.glyphicon.glyphicon-send>
+                Multiple Application
+              %table.table
+                %thead
+                  %tr
+                    %th
+                      %span.price
+                        %i.icon-dollar>
+                        35
+                %tbody
+                  %tr
+                    %td Multiple Installations
+                  %tr
+                    %td No reselling
+                  %tr
+                    %td Free Email Support
+                  %tr
+                    %td
+                      %a.btn{:href => "#"} PURCHASE NOW
+          .col-md-4.col-sm-4.col-xs-12
+            .wrapper
+              %h3.text-center
+                %span.glyphicon.glyphicon-plane>
+                Extended License
+              %table.table
+                %thead
+                  %tr
+                    %th
+                      %span.price
+                        %i.icon-dollar>
+                        99
+                %tbody
+                  %tr
+                    %td Multiple Installations
+                  %tr
+                    %td Allowed to use and resell
+                  %tr
+                    %td Free Email Support
+                  %tr
+                    %td
+                      %a.btn{:href => "#"} PURCHASE NOW
+          .clearfix
+/ /.container
+/ Clients and Testimonials Section
+/ Image background parallax
+#clients.section.image
+  .background.parallax
+  .fixed-container
+    .content.process
+      %h1 Clients &amp; Testimonials
+      .row
+        .logo.col-md-3.col-sm-3.col-xs-12
+          %a.tab{"data-target" => "#wdc", "data-toggle" => "tab", :href => "http://webdesigncrowd.com"}
+            %img{:alt => "webdesigncrowd", :src => "assets/images/logo.png"}/
+        .logo.col-md-3.col-sm-3.col-xs-12
+          %a.tab{"data-target" => "#creativemarket", "data-toggle" => "tab", :href => "https://creativemarket.com/webdesigncrowd/"}
+            %img{:alt => "Creative Market", :src => "assets/images/CreativeMarket-Logo.png"}/
+        .logo.col-md-3.col-sm-3.col-xs-12
+          %a.tab{"data-target" => "#themeforest", "data-toggle" => "tab", :href => "http://themeforest.net/?ref=acburst"}
+            %img{:alt => "themeforest", :src => "assets/images/themeforest.png"}/
+        .logo.col-md-3.col-sm-3.col-xs-12
+          %a.tab{"data-target" => "#mojothemes", "data-toggle" => "tab", :href => "http://www.mojo-themes.com/?r=webdesigncrowd"}
+            %img{:alt => "Mojo", :src => "assets/images/mojo.png"}/
+      .row
+        .empty.col-md-1.col-sm-1.col-xs-12
+        .col-md-10.col-sm-10.col-xs-12
+          .tab-content
+            #wdc.tab-pane.fade WebDesignCrowd
+            #creativemarket.tab-pane.active.fade.in
+              Creative Market is a platform for handcrafted, mousemade design
+              content from independent creatives around the world.
+              We’re passionate about making beautiful design simple
+              and accessible to everyone.
+            #themeforest.tab-pane.fade ThemeForest is an Envato Marketplace. At ThemeForest you can buy and sell HTML templates as well as themes for popular CMS products like WordPress, Joomla and Drupal with prices ranging from just $5 up to $40. Items are priced on the complexity, quality and use of the file. The site is home to a bustling community of web designers and developers and is the biggest marketplace of its kind.
+            #mojothemes.tab-pane.fade At MOJO Themes we’ve created an open marketplace to sell premium WordPress themes and templates. Also buyers can browse quality items that have been reviewed by our expert team which include free support, upgrades and rich documentation.
+        .empty.col-md-1.col-sm-1.col-xs-12
+.footer
+  .fixed-container
+    .row#contact
+      .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
+        .text-center
+          %h1 Get Started Now
+          %h4 Send us your request and we'll get back to you right away on how to get moving.
+          %form
+            %input.col-md-8.col-sm-8.col-md-offset-2.col-sm-offset-2{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
+            %textarea.col-md-8.col-sm-8.col-md-offset-2.col-sm-offset-2{:name => "message", :placeholder => "Your message", :required => "", :rows => "5"}
+            %button{:type => "submit"}
+              %span
+                Send message
+    .row
+      .empty.col-md-12.col-sm-12.col-xs-12
+        %hr/
+  %p.copyright
+    Made with
+    %i.icon-heart
+    by
+    = link_to 'Azbolt', data.site.url
+/
+  Bootstrap core JavaScript
+  \==================================================
+/ Placed at the end of the document so the pages load faster
+%script{:src => "assets/javascripts/jquery-1.9.1.min.js"}
+%script{:src => "assets/javascripts/jquery.mixitup.min.js"}
+%script{:src => "assets/javascripts/bootstrap.min.js"}
+%script{:src => "assets/javascripts/init.js"}

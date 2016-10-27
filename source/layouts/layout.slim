@@ -35,15 +35,16 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
     - if current_page.data.preferred_url
       link rel='canonical' href=current_page.data.preferred_url
 
-    = stylesheet_link_tag 'all'
-    = javascript_include_tag 'all'
-    = favicon_tag 'images/favicon.ico'
-    = favicon_tag 'images/favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
+    / = stylesheet_link_tag 'all'
+    / = javascript_include_tag 'all'
+    
+    = stylesheet_link_tag 'bootstrap'
+    = stylesheet_link_tag 'style'
+    link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+    link href="//fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css"
+    
+    = favicon_tag 'favicon.ico'
+    = favicon_tag 'favicon.ico', rel: 'apple-touch-icon', type: 'image/png'
 
-  body class=page_classes
-    main role='main'
-      = yield
-
-    / Footer
-    footer
-      = link_to 'Sitemap', 'sitemap'
+  body data-spy="scroll" data-target="#navbar" data-offset="70" class=page_classes
+    = yield

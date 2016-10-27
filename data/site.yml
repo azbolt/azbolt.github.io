@@ -7,7 +7,7 @@ description: 'Azbolt is a professional software development company that offers 
 title: 'Azbolt - Best Web & Mobile App Development Agency'
 
 # Optional
-logo_image_name: 'example-logo-big.png'
-logo_image_path: 'http://www.examplecdn.com/example-logo-large.png'
+logo_image_name: 'azbolt-logo.png'
+logo_image_path: '../source/assets/images/azbolt-logo.png'
 twitter_handle: '@AzboltHQ'
 # facebook_app_id: ''
