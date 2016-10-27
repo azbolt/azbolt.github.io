@@ -1,0 +1,13 @@
+# Required
+language: 'en-us'
+url: 'https://azbolt.com'
+human_url: 'Azbolt.com'
+name: 'Azbolt'
+description: 'Azbolt is a professional software development company that offers web development and hybrid mobile app development solutions to its global clients'
+title: 'Azbolt - Best Web & Mobile App Development Agency'
+
+# Optional
+logo_image_name: 'example-logo-big.png'
+logo_image_path: 'http://www.examplecdn.com/example-logo-large.png'
+twitter_handle: '@AzboltHQ'
+# facebook_app_id: ''
