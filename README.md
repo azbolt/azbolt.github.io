@@ -3,9 +3,7 @@
 Setup
 * Clone the repository into your local directory
 * `bundle install`
-* `npm install -g bower`
 * `npm install -g gulp-cli`
-* `bower install`
 * `npm install`
 
 Running Local Server

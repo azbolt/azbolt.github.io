@@ -17,12 +17,12 @@
       });
 
     // MixItUp Grid
-    $(function(){
-      $('.gallery').mixitup({
-        easing: 'snap',
-        resizeContainer: true
-      });
-		});
+    // $(function(){
+    //   $('.gallery').mixitup({
+    //     easing: 'snap',
+    //     resizeContainer: true
+    //   });
+		// });
 
     // client tab init
     $(document).off('click.tab.data-api');
@@ -31,6 +31,7 @@
     // Tooltip init
     $(".service-icon i").tooltip();
     $(".social-media a").tooltip();
+		$("#meet-expert i").tooltip();
 
     // custom parallax
     $(window).scroll(function() {

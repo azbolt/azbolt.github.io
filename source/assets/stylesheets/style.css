@@ -1,9 +1,3 @@
-/*
- * Made by WebDesignCrowd
- * http://webdesigncrowd.com
- *
- */
-
 html, body {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   height: 100%;
@@ -28,6 +22,9 @@ html, body {
   }
   .fixed-container .row [class^='col-md-'] {
     margin-bottom: 50px;
+  }
+  .fixed-container .team .row [class^='col-md-'] {
+    margin-bottom: 0px;
   }
 
 ul { margin: 0; padding: 0; }
@@ -110,6 +107,20 @@ a:hover {
   }
   .btn:focus {
     color: #fff;
+    outline: none;
+  }
+
+  .round-button {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding: 1em 5rem;
+    border: none;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 2px;
+    display: inline-block;
     outline: none;
   }
 
@@ -239,13 +250,11 @@ label {
     .navbar .navbar-toggle:focus,
     .navbar .navbar-toggle:hover { background-color: transparent; }
 
-    .navbar .navbar-toggle span.icon-bar {
-      background-color: #999;
-      height: 3px;
-      margin: 4px 0;
+    .navbar .navbar-toggle span.fa.fa-bars {
+      color: #999;
     }
-      .navbar .navbar-toggle:hover span.icon-bar {
-        background-color: #444;
+      .navbar .navbar-toggle:hover span.fa.fa-bars {
+        color: #444;
       }
   .navbar .navbar-collapse {
     border-color: #999;
@@ -356,6 +365,9 @@ label {
   .section.welcome .content {
     text-align: center;
   }
+  .section.welcome a.scroll-down.btn {
+    white-space: normal;
+  }
   .section.welcome a { color: rgba(255,255,255,.8); }
   .section.welcome a:hover { color: #fff; }
   img.background {
@@ -383,7 +395,7 @@ label {
     display: block;
     font-size: 40px;
     font-weight: normal;
-    margin-top: 20px;
+    margin-top: 40px;
     color: rgba(255,255,255,.9);
   }
   .welcome span.glyphicon {
@@ -522,18 +534,54 @@ label {
  *
  */
 
-#work {
+#services {
   min-height: 0;
   color: #000;
 }
-  #work .controls {
+  #services .controls {
     text-align: center;
     margin-bottom: 20px;
   }
-    #work .controls .btn {
+    #services .controls .btn {
       margin: 0 5px 10px 5px;
     }
-  #work h1 { margin-bottom: 35px; }
+  #services h1 {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+  #services h5 {
+    color: #3c3d41;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    font-weight: bolder;
+  }
+  #services .service-section p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #656b6f;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+
+  #services .round-button {
+    background-color: #F4C532;
+    color: #fff;
+  }
+
+  #services [class^="fa-"], #services [class*=" fa-"] {
+    color: #F4C532;
+  }
+
+  #services .services-icons [class^='col-md-'] {
+      margin-bottom: 30px;
+  }
+
+  #services .services-icons p {
+    width: 80%;
+    color: #656b6f;
+  }
 
 .gallery {
   padding: 0;
@@ -619,6 +667,21 @@ label {
       font-size: 0;
       line-height: 0;
     }
+    #services h1 {
+      text-align: center;
+    }
+    #services .services-icons p {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 420px) {
+    #services h1 {
+      text-align: center;
+    }
+    #services .services-icons p {
+      width: 100%;
+    }
   }
 /*  CLIENTS and TESTIMONIALS
  *    stylings for testimonials
@@ -684,6 +747,10 @@ label {
 
 @media (max-width: 768px) {
   #clients img.logo { width: 50%; }
+
+  .welcome h4 {
+    width: 65%;
+  }
 }
 @media (max-width: 420px) {
 
@@ -694,101 +761,14 @@ label {
   }
 }
 
-
-/*  PRICING
- *    stylings for pricing tables
- *
- *
- */
-.pricing { }
-  .pricing span {
-    margin-right: 20px;
-  }
-  .pricing .wrapper {
-    padding: 20px;
-    background-color: #ccc;
-    -webkit-transition: .5s;
-    transition: .5s;
-  }
-    .pricing .wrapper:hover {
-      margin-top: -10px;
-      background-color: #f4d432;
-      box-shadow: 0 10px 0 0 #e8c61a;
-    }
-    .pricing .wrapper:hover h3 { color: #fff; }
-    .pricing .wrapper:hover span.price {
-       background-color: rgba(255,255,255,.8);
-       border-color: transparent;
-    }
-    .pricing .wrapper:hover td { color: #fff; }
-    .pricing .wrapper:hover a.btn { background-color: #666; color: #fff; }
-    .pricing .wrapper a.btn:hover { border-color: transparent; background-color: #888; }
-  .pricing h3, .pricing h2, .pricing .table td {
-    -webkit-transition: .25s;
-    transition: .25s;
-  }
-  .pricing h3 {
-    color: #555;
-    font-size: 28px;
-  }
-  .pricing span.price {
-    display: block;
-    color: #555;
-    width: 100px;
-    height: 100px;
-    line-height: 90px;
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-
-    border: 2px solid rgba(255,255,255,.8);
-    margin: 0 auto;
-  }
-    .pricing span.price i {
-      position: relative;
-      top: 4px;
-      margin-right: 10px;
-    }
-
-  .table {
-    margin-bottom: 0;
-  }
-    .table .btn {
-      margin-top: 15px;
-    }
-    .table caption {
-      margin: 20px 0;
-    }
-    .table thead tr th {
-      font-weight: normal;
-      color: #8bc534;
-      display: block;
-      font-size: 30px;
-      line-height: 40px;
-      text-align: center;
-      margin-bottom: 10px;
-      border: 0;
-    }
-    .pricing .table td {
-      border: 0;
-      padding: 15px 0;
-      text-align: center;
-    }
-
-@media (max-width: 768px) {
-  .pricing .wrapper:hover {
-    margin-top: 0;
-    box-shadow: none;
-  }
-}
-
 /*  TEAM
  *    stylings for about us section
  *
  *
  */
-
+#about {
+  padding-top: 65px;
+}
 .team { text-align: center; }
   .team h2 {
     color: #444;
@@ -803,6 +783,11 @@ label {
     color: #444;
     margin-bottom: 15px;
     line-height: 26px;
+  }
+
+  .team .round-button {
+    background-color: #FFF;
+    color: #FFD03C;
   }
 
   .portrait {
@@ -947,7 +932,7 @@ label {
     text-align: center;
   }
 
-  i.icon-heart {
+  i.fa.fa-heart {
     color: red;
   }
 
@@ -968,7 +953,7 @@ label {
 }
 
 #contact input[type="email"], #contact textarea {
-  margin-bottom: 1rem !important;
+  margin-bottom: 2rem !important;
   background: hsla(0,0%,100%,.15);
   border-radius: 4px;
   color: #fff;
@@ -978,17 +963,7 @@ label {
   outline: none;
 }
 
-#contact button {
-  margin-top: 10px;
-  padding: 1em 5rem;
+#contact .round-button {
   background-color: #F4C532;
   color: #fff;
-  border: none;
-  border-radius: 40px;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-  letter-spacing: 2px;
-  display: inline-block;
-  outline: none;
 }
