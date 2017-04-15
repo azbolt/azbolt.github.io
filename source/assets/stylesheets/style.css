@@ -1,6 +1,7 @@
 html, body {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   height: 100%;
+  background-color: #4B83E7;
 }
 
 .clearfix {
@@ -30,7 +31,7 @@ html, body {
 ul { margin: 0; padding: 0; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 h1 {
   display: inline-block;
@@ -55,10 +56,10 @@ hr {
 }
 
 a {
-  color: #ffde36;
+  color: #4B83E7;
 }
 a:hover {
-  color: #edc80e;
+  color: #4B83E7;
   text-decoration: none;
 }
 .italic { font-style: italic; }
@@ -197,6 +198,7 @@ label {
  */
 
 .navbar {
+  display: none;
   background-color: #fff;
   border: none;
   top: -100px;
@@ -230,13 +232,13 @@ label {
     font-size: 30px;
     line-height: 70px;
     font-weight: normal;
-    color: #ffde36;
+    color: #4B83E7;
     padding: 0 30px 0 0;
     -webkit-transition: .4s;
     transition: .4s;
   }
     .navbar a.navbar-brand span.glyphicon { top: 4px; font-size: 28px; }
-    .navbar a.navbar-brand:hover, .navbar a.navbar-brand:focus  { color: #edc80e; }
+    .navbar a.navbar-brand:hover, .navbar a.navbar-brand:focus  { color: #4B83E7; }
 
   /* Smaller device menu styles */
   .navbar .navbar-toggle {
@@ -276,7 +278,7 @@ label {
   }
     .navbar .navbar-nav li a:hover {
       color: #fff;
-      background-color: #ffde36;
+      background-color: #4B83E7;
     }
     .navbar .navbar-nav li.dropdown.open a.dropdown-toggle {
       background-color: #bbb;
@@ -294,7 +296,7 @@ label {
         }
   .navbar .navbar-nav li.active a,
   .navbar .navbar-nav li.active a:hover {
-    background-color: #edc80e;
+    background-color: #4B83E7;
   }
 
   @media (max-width: 992px) {
@@ -320,7 +322,7 @@ label {
   min-height: 100%;
   z-index: 1;
   padding-top: 105px;
-  background-color: #ffd03c;
+  background-color: #4B83E7;
   transition: background-color 1s;
   -webkit-transition: background-color 1s;
 }
@@ -330,8 +332,12 @@ label {
     background: none;
     background-color: #eee;
   }
+  .section.short.white {
+    min-height: 0;
+    padding: 96px 0;
+  }
     .section.white h1 {
-      color: #f4c532;
+      color: #4B83E7;
     }
     .section.white a.btn {
       color: #777;
@@ -344,7 +350,7 @@ label {
     }
     .section.white a.btn.active {
       color: #dfba00;
-      border-color: #edc80e;
+      border-color: #4B83E7;
       box-shadow: none;
       background-color: transparent;
     }
@@ -383,7 +389,7 @@ label {
     font-size: 50px;
     color: #fff;
   }
-  .welcome h4 {
+  .welcome h2, .welcome h3, .welcome h4 {
     color: rgba(255,255,255,.7);
     width: 50%;
     margin: 0 auto;
@@ -411,7 +417,7 @@ label {
       width: 100px;
       height: 100px;
       padding-top: 15px;
-      margin: 14% 0 30px 0;
+      margin: 10% 0 30px 0;
       font-size: 60px;
     }
     .welcome span.logo.glyphicon-leaf {
@@ -444,6 +450,10 @@ label {
       font-size: 30px;
       margin: 18px 0 35px 0;
     }
+
+    #home h1 {
+      font-size: 25px;
+    }
     .section.welcome { height: 100%; }
     span.logo.glyphicon { margin-top: 20px; }
 }
@@ -458,6 +468,29 @@ label {
   img.background {
     background-attachment: scroll;
     position: absolute;
+  }
+}
+
+/* Learn More section */
+.content.learn-more.text-center {
+    padding: 0 30px;
+}
+
+.learn-more h2 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 420px) {
+  #learn-more h2 {
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  #learn-more .round-button span {
+      font-size: 12px;
   }
 }
 
@@ -496,12 +529,12 @@ label {
     color: #fff;
   }
     #process .service-icon i:hover  {
-      background-color: #edc80e;
+      background-color: #4B83E7;
       color: #fff;
     }
     #process .service-icon i {
       margin: 0 auto;
-      color: rgba(255,255,255,.7);
+      color: #4B83E7;
       display: inline-block;
       font-size: 40px;
       display: block;
@@ -509,7 +542,7 @@ label {
       width: 100px;
       padding-top: 25px;
 
-      border: 4px solid rgba(237,200,14,.7);
+      border: 4px solid #4B83E7;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
@@ -565,13 +598,13 @@ label {
     width: 90%;
   }
 
-  #services .round-button {
-    background-color: #F4C532;
+  #learn-more .round-button, #services .round-button {
+    background-color: #4B83E7;
     color: #fff;
   }
 
   #services [class^="fa-"], #services [class*=" fa-"] {
-    color: #F4C532;
+    color: #4B83E7;
   }
 
   #services .services-icons [class^='col-md-'] {
@@ -748,6 +781,14 @@ label {
 @media (max-width: 768px) {
   #clients img.logo { width: 50%; }
 
+  .welcome span.logo.glyphicon {
+    margin-top: 25%;
+  }
+
+  .learn-more h2 {
+    font-size: 30px;
+  }
+
   .welcome h4 {
     width: 65%;
   }
@@ -756,8 +797,13 @@ label {
 
   #clients { background-attachment: scroll; }
 
-  .welcome h4 {
-    width: 100%;
+  .welcome span.logo.glyphicon {
+    margin-top: 20%;
+  }
+
+  .welcome h2 {
+    font-size: 20px;
+    width: 80%;
   }
 }
 
@@ -787,7 +833,7 @@ label {
 
   .team .round-button {
     background-color: #FFF;
-    color: #FFD03C;
+    color: #4B83E7;
   }
 
   .portrait {
@@ -861,22 +907,21 @@ label {
  *
  */
 
-.contact {
-
+.contact h3 {
+  margin-top: 0;
 }
-  .contact h3 {
-    margin-top: 0;
-  }
-  .contact p {
-    color: #666;
-  }
-  .contact span.glyphicon {
-    color: #444;
-    margin-right: 10px;
-  }
-  .contact .btn {
-    width: 100%;
-  }
+.contact p {
+  color: #666;
+}
+.contact span.glyphicon {
+  color: #444;
+  margin-right: 10px;
+}
+.contact .btn {
+  width: 100%;
+}
+
+
 
 
 
@@ -908,7 +953,7 @@ label {
     margin-bottom: 5px;
   }
   .footer li a { color: #fff; }
-  .footer li a:hover { color: #ffde36; }
+  .footer li a:hover { color: #4B83E7; }
 
   .footer p {
     line-height: 25px;
@@ -964,6 +1009,23 @@ label {
 }
 
 #contact .round-button {
-  background-color: #F4C532;
+  background-color: #4B83E7;
   color: #fff;
+}
+
+@media (max-width: 420px) {
+  #contact h1 {
+    font-size: 30px;
+  }
+}
+
+/* Expectation */
+
+#expectation i.fa, #expectation h2, #expectation p {
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+#expectation h2 {
+  text-transform: uppercase;
 }

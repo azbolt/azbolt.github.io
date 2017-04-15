@@ -1,11 +1,7 @@
-/*
- * Made by WebDesignCrowd
- * http://webdesigncrowd.com
- *
- */
-
 (function($){
 	$(function(){
+
+		$('.navbar').css('display', 'block');
 
 	  // Fixed header animates in after scrolling past welcome
 	  $('#navbar').affix({

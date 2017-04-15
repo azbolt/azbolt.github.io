@@ -3,8 +3,8 @@ language: 'en-us'
 url: 'https://azbolt.com'
 human_url: 'Azbolt.com'
 name: 'Azbolt'
-description: 'Azbolt is a professional software development company that offers web development and hybrid mobile app development solutions to its global clients'
-title: 'Azbolt - Best Web & Mobile App Development Agency'
+description: 'Azbolt is a professional software development company that offers web development solutions to its global clients'
+title: 'Azbolt - Your Trusted Ruby on Rails Agency In Asia'
 
 # Optional
 logo_image_name: 'azbolt-logo.png'

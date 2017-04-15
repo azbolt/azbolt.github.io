@@ -1,89 +1,86 @@
 #navbar.navbar.navbar-inverse
   .fixed-container
     .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
         %span.fa.fa-bars.fa-2x
-      %a.navbar-brand{:href => "#home"}
-        %img#azbolt-logo{:alt => "Azbolt Logo", :src => "assets/images/azbolt-logo.png"}/
+      %a.navbar-brand{href: "#home"}
+        %img#azbolt-logo{alt: "Azbolt Logo", src: "assets/images/azbolt-logo.png"}/
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
-          %a{:href => "#about"}
+          %a{href: "#learn-more"}
             %span.glyphicon.glyphicon-user>
-            Team
+            About
         %li
-          %a{:href => "#process"}
+          %a{href: "#process"}
             %i.fa.fa-gear>
             Process
         %li
-          %a{:href => "#services"}
+          %a{href: "#services"}
             %span.glyphicon.glyphicon-briefcase>
             Services
         -# %li
-        -#   %a{:href => "#clients"}
+        -#   %a{href: "#clients"}
         -#     %i.fa.fa-comments>
         -#     Clients
         %li
-          %a{:href => "#contact"}
+          %a{href: "#contact"}
             %i.fa.fa-inbox>
             Contact
     / /.nav-collapse
 / Features Section
 #home.section.welcome
-  %img.background{:alt => "stream blurred", :src => "assets/images/stream_blur2.jpg"}/
+  %img.background{alt: "stream blurred", src: "assets/images/background.jpg"}/
   .container
     .content.center
       %span.logo.glyphicon.glyphicon-flash
-      %h1 We Build Kickass Digital Products
+      %h2 AZBOLT
+      %h1 Your Trusted Ruby on Rails Agency In Asia
       .text-center
-        %h4 A software development studio that crafts custom web and mobile applications for our clients
-      %a.scroll-down.btn{:href => "#contact"} REQUEST A FREE PRODUCT CONSULTATION
+        %h2 We crafts custom web applications for your business
+      %a.scroll-down.btn{href: "#learn-more"} LEARN MORE
       %br/
-      %a.scroll-down#meet-expert{:href => "#about"}
-        %i.fa.fa-angle-down{"data-toggle" => "tooltip", :title => "Meet The Team"}
-    / /.content
-/ /.container
-/ About Section
-#about.section
+      %a.scroll-down#meet-expert{href: "#learn-more"}
+        %i.fa.fa-angle-down
+/ Learn More section
+#learn-more.section.short.white
   .fixed-container
-    .content.team
-      %h1 Meet the Team
-      .row
-        .col-md-4.col-sm-4.col-xs-12
-          %h2 Adrian Ching
-          %h3.italic Founder/Developer
-          .portrait
-            %img{:alt => "Adrian Ching", :src => "assets/images/adrianching.jpg"}/
-          %p Ruby on Rails/React Native Developer.
-          .social-media
-            %a{"data-toggle" => "tooltip", :href => "https://twitter.com/adrianchinghc", :title => "Twitter"}
-              %i.fa.fa-twitter
-            %a{"data-toggle" => "tooltip", :href => "https://github.com/adrianchinghc", :title => "Github"}
-              %i.fa.fa-github
-        .col-md-4.col-sm-4.col-xs-12
-          %h2 Chin Loong
-          %h3.italic Founder/Developer
-          .portrait
-            %img{:alt => "Chin Loong", :src => "assets/images/chinloong.jpeg"}/
-          %p Ruby on Rails/React Native Developer.
-          .social-media
-            %a{"data-toggle" => "tooltip", :href => "https://twitter.com/chinloong91", :title => "Twitter"}
-              %i.fa.fa-twitter
-            %a{"data-toggle" => "tooltip", :href => "https://github.com/chinloong91", :title => "Github"}
-              %i.fa.fa-github
-        .col-md-4.col-sm-4.col-xs-12
-          %h2 Soo Yang
-          %h3.italic Founder/Developer
-          .portrait
-            %img{:alt => "Soo Yang", :src => "assets/images/sooyang.jpg"}/
-          %p Ruby on Rails/React Native Developer.
-          .social-media
-            %a{"data-toggle" => "tooltip", :href => "https://github.com/sooyang", :title => "Github"}
-              %i.fa.fa-github
-      %a.scroll-down{:href => "#contact"}
+    .content.learn-more.text-center
+      %h2 Leverage our technical expertise in software development to solve problems for your business. Whether you need a web application or looking to expand your team, Azbolt can help.
+      %a.scroll-down{href: "#process"}
         %button.round-button
           %span
-            Hire Us
+            How We Work
+/ About Section
+-# #about.section
+-#   .fixed-container
+-#     .content.team
+-#       %h1 Meet the Team
+-#       .row
+-#         .col-md-6.col-sm-6.col-xs-12
+-#           %h2 Adrian Ching
+-#           %h3.italic Founder/Developer
+-#           .portrait
+-#             %img{alt: "Adrian Ching", src: "assets/images/adrianching.jpg"}/
+-#           %p Ruby on Rails/React Native Developer.
+-#           .social-media
+-#             %a{"data-toggle" => "tooltip", href: "https://twitter.com/adrianchinghc", title: "Twitter"}
+-#               %i.fa.fa-twitter
+-#             %a{"data-toggle" => "tooltip", href: "https://github.com/adrianchinghc", title: "Github"}
+-#               %i.fa.fa-github
+-#         .col-md-6.col-sm-6.col-xs-12
+-#           %h2 Soo Yang
+-#           %h3.italic Founder/Developer
+-#           .portrait
+-#             %img{alt: "Soo Yang", src: "assets/images/sooyang.jpg"}/
+-#           %p Ruby on Rails/React Native Developer.
+-#           .social-media
+-#             %a{"data-toggle" => "tooltip", href: "https://github.com/sooyang", title: "Github"}
+-#               %i.fa.fa-github
+-#       %a.scroll-down{href: "#contact"}
+-#         %button.round-button
+-#           %span
+-#             Hire Us
 / /.container
 / process Section
 / Image background parallax
@@ -100,19 +97,19 @@
       .row
         .col-md-3.col-sm-3.col-xs-6
           .service-icon
-            %i.fa.fa-search{"data-toggle" => "tooltip", :title => "Professional application planning, architeching the most appropriate back and front-end stack."}
+            %i.fa.fa-search{"data-toggle" => "tooltip", title: "Professional application planning, architeching the most appropriate back and front-end stack."}
             %span RESEARCH
         .col-md-3.col-sm-3.col-xs-6
           .service-icon
-            %i.fa.fa-code{"data-toggle" => "tooltip", :title => "As soon as we pick the right tools for your project, we begin working on it with you."}
+            %i.fa.fa-code{"data-toggle" => "tooltip", title: "As soon as we pick the right tools for your project, we begin working on it with you."}
             %span DEVELOPMENT
         .col-md-3.col-sm-3.col-xs-6
           .service-icon
-            %i.fa.fa-check{"data-toggle" => "tooltip", :title => "Writing tests help us make sure that your product is future-proof. The main phase of testing happens daily."}
+            %i.fa.fa-check{"data-toggle" => "tooltip", title: "Writing tests help us make sure that your product is future-proof. The main phase of testing happens daily."}
             %span TESTING
         .col-md-3.col-sm-3.col-xs-6
           .service-icon
-            %i.fa.fa-rocket{"data-toggle" => "tooltip", :title => "Once you are ready to ship your project, we will help you deploy it to your own infrastructure."}
+            %i.fa.fa-rocket{"data-toggle" => "tooltip", title: "Once you are ready to ship your project, we will help you deploy it to your own infrastructure."}
             %span PRODUCTION
 / Portfolio Section
 / On smaller devices, portfolio becomes auto height and no fixed
@@ -126,7 +123,7 @@
             %p Writing software is more than just getting the damn thing to work. We take pride in building great digital products that are in rock solid condition.
             %p We rely heavily on automated test suites which allow us to craft your product with confidence, focusing on new features that matter the most.
             %p Your Idea  +  Our Best Practices  =  A World Class Software
-            %a.scroll-down{:href => "#contact"}
+            %a.scroll-down{href: "#contact"}
               %button.round-button
                 %span
                   Launch Your Product With Us
@@ -159,12 +156,37 @@
               %h5 YOU TELL US
               %p We are always ready to take on new challenges. Tell us your problem and we will solve it for you
           .hidden-lg.hidden-md.text-center
-            %a.scroll-down{:href => "#contact"}
+            %a.scroll-down{href: "#contact"}
               %button.round-button
                 %span
                   Launch Your Product With Us
+#expectation.section
+  .fixed-container
+    .content.team
+      %h1 What Will You Get
+      .row
+        .col-md-3.col-sm-6.col-xs-12
+          %i.fa.fa-code.fa-4x
+          %h2 Clean Codes
+          %p We use various code analysis tools to make sure the codes we write are of good quality and readable.
+        .col-md-3.col-sm-6.col-xs-12
+          %i.fa.fa-bolt.fa-4x
+          %h2 Agile System
+          %p Daily standups, Kanban style product backlog, sprint reviews are some of the must have during development.
+        .col-md-3.col-sm-6.col-xs-12
+          %i.fa.fa-file-text-o.fa-4x
+          %h2 Documentations
+          %p You will have full visibility on our process and a well writen documentations on everything we do.
+        .col-md-3.col-sm-6.col-xs-12
+          %i.fa.fa-hourglass-start.fa-4x
+          %h2 Save Time
+          %p Spend less time worrying about technical aspect of your business. We will handle it for you.
+      %a.scroll-down{href: "#contact"}
+        %button.round-button
+          %span
+            Let's Talk
   / GALLERY
-/ /.container
+-# .container
 / Clients and Testimonials Section
 / Image background parallax
 -# #clients.section.image
@@ -174,17 +196,17 @@
 -#       %h1 Clients &amp; Testimonials
 -#       .row
 -#         .logo.col-md-3.col-sm-3.col-xs-12
--#           %a.tab{"data-target" => "#wdc", "data-toggle" => "tab", :href => "http://webdesigncrowd.com"}
--#             %img{:alt => "webdesigncrowd", :src => "assets/images/logo.png"}/
+-#           %a.tab{"data-target" => "#wdc", "data-toggle" => "tab", href: "http://webdesigncrowd.com"}
+-#             %img{alt: "webdesigncrowd", src: "assets/images/logo.png"}/
 -#         .logo.col-md-3.col-sm-3.col-xs-12
--#           %a.tab{"data-target" => "#creativemarket", "data-toggle" => "tab", :href => "https://creativemarket.com/webdesigncrowd/"}
--#             %img{:alt => "Creative Market", :src => "assets/images/CreativeMarket-Logo.png"}/
+-#           %a.tab{"data-target" => "#creativemarket", "data-toggle" => "tab", href: "https://creativemarket.com/webdesigncrowd/"}
+-#             %img{alt: "Creative Market", src: "assets/images/CreativeMarket-Logo.png"}/
 -#         .logo.col-md-3.col-sm-3.col-xs-12
--#           %a.tab{"data-target" => "#themeforest", "data-toggle" => "tab", :href => "http://themeforest.net/?ref=acburst"}
--#             %img{:alt => "themeforest", :src => "assets/images/themeforest.png"}/
+-#           %a.tab{"data-target" => "#themeforest", "data-toggle" => "tab", href: "http://themeforest.net/?ref=acburst"}
+-#             %img{alt: "themeforest", src: "assets/images/themeforest.png"}/
 -#         .logo.col-md-3.col-sm-3.col-xs-12
--#           %a.tab{"data-target" => "#mojothemes", "data-toggle" => "tab", :href => "http://www.mojo-themes.com/?r=webdesigncrowd"}
--#             %img{:alt => "Mojo", :src => "assets/images/mojo.png"}/
+-#           %a.tab{"data-target" => "#mojothemes", "data-toggle" => "tab", href: "http://www.mojo-themes.com/?r=webdesigncrowd"}
+-#             %img{alt: "Mojo", src: "assets/images/mojo.png"}/
 -#       .row
 -#         .empty.col-md-1.col-sm-1.col-xs-12
 -#         .col-md-10.col-sm-10.col-xs-12
@@ -204,16 +226,16 @@
       .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
         .text-center
           %h1 Get Started Now
-          %h4 Send us your request and we'll get back to you right away on how to get moving.
-          .alert.alert-success#thankyou_message{:style => "display:none;"}
+          %h4 Interested in working together? Send us your request and we'll get back to you right away on how to get moving.
+          .alert.alert-success#thankyou_message{style: "display:none;"}
             Thank you for contacting us. We will get back to you as soon as possible.
           #contact-form
-            .alert.alert-danger#email-invalid{:style => "display:none;"}
+            .alert.alert-danger#email-invalid{style: "display:none;"}
               Email is invalid. Please use a real email so that we can contact you.
-            %form#gform{:action => "//script.google.com/macros/s/AKfycbxNm_YCodShmoGNc7-GaygmZarPe52m-FdIEacPpjmue6vJBFZ5/exec", :method => "post"}
-              %input.col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2{:name => "email", :placeholder => "Your email", :required => "", :type => "email"}/
-              %textarea.col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2{:name => "message", :placeholder => "Your message", :required => "", :rows => "5"}
-              %button.round-button#contact-button.col-md-4.col-sm-6.col-xs-12.col-md-offset-4.col-sm-offset-3{:type => "submit"}
+            %form#gform{action: "//script.google.com/macros/s/AKfycbxNm_YCodShmoGNc7-GaygmZarPe52m-FdIEacPpjmue6vJBFZ5/exec", method: "post"}
+              %input.col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2{name: "email", placeholder: "Your email", required: "", type: "email"}/
+              %textarea.col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2{name: "message", placeholder: "Your message", required: "", rows: "5"}
+              %button.round-button#contact-button.col-md-4.col-sm-6.col-xs-12.col-md-offset-4.col-sm-offset-3{type: "submit"}
                 %span
                   Send message
     .row
@@ -224,4 +246,4 @@
     %i.fa.fa-heart
     by
     = link_to 'Azbolt', data.site.url
-%script{"data-cfasync" => "false", :src => "assets/javascripts/contact-form.js", :type => "text/javascript"}
+%script{"data-cfasync" => "false", src: "assets/javascripts/contact-form.js", type: "text/javascript"}
