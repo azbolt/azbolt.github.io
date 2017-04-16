@@ -15,22 +15,22 @@
           %a{href: "#process"}
             %i.fa.fa-gear>
             Process
+        -# %li
+        -#   %a{href: "#team"}
+        -#     %span.glyphicon.glyphicon-briefcase>
+        -#     Team
         %li
           %a{href: "#services"}
             %span.glyphicon.glyphicon-briefcase>
             Services
-        -# %li
-        -#   %a{href: "#clients"}
-        -#     %i.fa.fa-comments>
-        -#     Clients
         %li
           %a{href: "#contact"}
             %i.fa.fa-inbox>
             Contact
-    / /.nav-collapse
+
 / Features Section
 #home.section.welcome
-  %img.background{alt: "stream blurred", src: "assets/images/background.jpg"}/
+  %img.background{alt: "Azbolt Background", src: "assets/images/background.jpg"}/
   .container
     .content.center
       %span.logo.glyphicon.glyphicon-flash
@@ -42,47 +42,18 @@
       %br/
       %a.scroll-down#meet-expert{href: "#learn-more"}
         %i.fa.fa-angle-down
+
 / Learn More section
 #learn-more.section.short.white
   .fixed-container
     .content.learn-more.text-center
-      %h2 Leverage our technical expertise in software development to solve problems for your business. Whether you need a web application or looking to expand your team, Azbolt can help.
+      %p Leverage on our technical expertise to solve your business challenges. Azbolt is here to listen, understand and deliver customized solution for you.
       %a.scroll-down{href: "#process"}
         %button.round-button
           %span
             How We Work
-/ About Section
--# #about.section
--#   .fixed-container
--#     .content.team
--#       %h1 Meet the Team
--#       .row
--#         .col-md-6.col-sm-6.col-xs-12
--#           %h2 Adrian Ching
--#           %h3.italic Founder/Developer
--#           .portrait
--#             %img{alt: "Adrian Ching", src: "assets/images/adrianching.jpg"}/
--#           %p Ruby on Rails/React Native Developer.
--#           .social-media
--#             %a{"data-toggle" => "tooltip", href: "https://twitter.com/adrianchinghc", title: "Twitter"}
--#               %i.fa.fa-twitter
--#             %a{"data-toggle" => "tooltip", href: "https://github.com/adrianchinghc", title: "Github"}
--#               %i.fa.fa-github
--#         .col-md-6.col-sm-6.col-xs-12
--#           %h2 Soo Yang
--#           %h3.italic Founder/Developer
--#           .portrait
--#             %img{alt: "Soo Yang", src: "assets/images/sooyang.jpg"}/
--#           %p Ruby on Rails/React Native Developer.
--#           .social-media
--#             %a{"data-toggle" => "tooltip", href: "https://github.com/sooyang", title: "Github"}
--#               %i.fa.fa-github
--#       %a.scroll-down{href: "#contact"}
--#         %button.round-button
--#           %span
--#             Hire Us
-/ /.container
-/ process Section
+
+/ Process Section
 / Image background parallax
 #process.section.image
   .background.parallax
@@ -111,6 +82,38 @@
           .service-icon
             %i.fa.fa-rocket{"data-toggle" => "tooltip", title: "Once you are ready to ship your project, we will help you deploy it to your own infrastructure."}
             %span PRODUCTION
+
+/ Team Section
+-# #team.section
+-#   .fixed-container
+-#     .content.team
+-#       %h1 Meet the Team
+-#       .row
+-#         .col-md-6.col-sm-6.col-xs-12
+-#           %h2 Adrian Ching
+-#           %h3.italic Founder/Developer
+-#           .portrait
+-#             %img{alt: "Adrian Ching", src: "assets/images/adrianching.jpg"}/
+-#           %p Ruby on Rails/React Native Developer.
+-#           .social-media
+-#             %a{"data-toggle" => "tooltip", href: "https://twitter.com/adrianchinghc", title: "Twitter"}
+-#               %i.fa.fa-twitter
+-#             %a{"data-toggle" => "tooltip", href: "https://github.com/adrianchinghc", title: "Github"}
+-#               %i.fa.fa-github
+-#         .col-md-6.col-sm-6.col-xs-12
+-#           %h2 Soo Yang
+-#           %h3.italic Founder/Developer
+-#           .portrait
+-#             %img{alt: "Soo Yang", src: "assets/images/sooyang.jpg"}/
+-#           %p Ruby on Rails/React Native Developer.
+-#           .social-media
+-#             %a{"data-toggle" => "tooltip", href: "https://github.com/sooyang", title: "Github"}
+-#               %i.fa.fa-github
+-#       %a.scroll-down{href: "#contact"}
+-#         %button.round-button
+-#           %span
+-#             Hire Us
+
 / Portfolio Section
 / On smaller devices, portfolio becomes auto height and no fixed
 #services.section.white
@@ -120,7 +123,7 @@
         .col-md-6.col-sm-12.col-xs-12.text-left
           %h1 Our Services
           .hidden-sm.hidden-xs.service-section
-            %p Writing software is more than just getting the damn thing to work. We take pride in building great digital products that are in rock solid condition.
+            %p Writing software is more than just getting the codes to work. We take pride in building great digital products that are in rock solid condition.
             %p We rely heavily on automated test suites which allow us to craft your product with confidence, focusing on new features that matter the most.
             %p Your Idea  +  Our Best Practices  =  A World Class Software
             %a.scroll-down{href: "#contact"}
@@ -160,32 +163,35 @@
               %button.round-button
                 %span
                   Launch Your Product With Us
+
+/ What Will You Get Section
 #expectation.section
   .fixed-container
-    .content.team
+    .content.expectation
       %h1 What Will You Get
       .row
         .col-md-3.col-sm-6.col-xs-12
           %i.fa.fa-code.fa-4x
-          %h2 Clean Codes
-          %p We use various code analysis tools to make sure the codes we write are of good quality and readable.
+          %h3 The Best Code
+          %p Our team follows best practices by using various code analysis tools to make sure the codes we write are of good quality.
         .col-md-3.col-sm-6.col-xs-12
-          %i.fa.fa-bolt.fa-4x
-          %h2 Agile System
-          %p Daily standups, Kanban style product backlog, sprint reviews are some of the must have during development.
+          %i.fa.fa-comments-o.fa-4x
+          %h3 Communications
+          %p When you work with us, you have direct access to the team working on your project through our team chat. There's no middleman.
         .col-md-3.col-sm-6.col-xs-12
           %i.fa.fa-file-text-o.fa-4x
-          %h2 Documentations
-          %p You will have full visibility on our process and a well writen documentations on everything we do.
+          %h3 Documentations
+          %p You will have full visibility on our processes with a well writen documentations on everything we do. Transparency is very important to us.
         .col-md-3.col-sm-6.col-xs-12
           %i.fa.fa-hourglass-start.fa-4x
-          %h2 Save Time
-          %p Spend less time worrying about technical aspect of your business. We will handle it for you.
+          %h3 Save Time
+          %p Spend less time worrying about the technical aspects of your business. Give us a crash course on your business and we will handle it for you.
       %a.scroll-down{href: "#contact"}
         %button.round-button
           %span
             Let's Talk
-  / GALLERY
+
+/ GALLERY
 -# .container
 / Clients and Testimonials Section
 / Image background parallax
@@ -233,11 +239,21 @@
             .alert.alert-danger#email-invalid{style: "display:none;"}
               Email is invalid. Please use a real email so that we can contact you.
             %form#gform{action: "//script.google.com/macros/s/AKfycbxNm_YCodShmoGNc7-GaygmZarPe52m-FdIEacPpjmue6vJBFZ5/exec", method: "post"}
-              %input.col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2{name: "email", placeholder: "Your email", required: "", type: "email"}/
-              %textarea.col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2{name: "message", placeholder: "Your message", required: "", rows: "5"}
-              %button.round-button#contact-button.col-md-4.col-sm-6.col-xs-12.col-md-offset-4.col-sm-offset-3{type: "submit"}
-                %span
-                  Send message
+              .container
+                .row
+                  .col-md-4.col-sm-4.col-xs-12.col-md-offset-2.col-sm-offset-2
+                    %input{name: "first_name", placeholder: "First Name", required: "", type: "first_name"}/
+                  .col-md-4.col-sm-4.col-xs-12
+                    %input{name: "last_name", placeholder: "Last Name", required: "", type: "last_name"}/
+                .row
+                  .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
+                    %input{name: "email", placeholder: "Your email", required: "", type: "email"}/
+                .row
+                  .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
+                    %textarea{name: "message", placeholder: "Your message", required: "", rows: "5"}
+                %button.round-button#contact-button.col-md-4.col-sm-6.col-xs-12.col-md-offset-4.col-sm-offset-3{type: "submit"}
+                  %span
+                    Send message
     .row
       .empty.col-md-12.col-sm-12.col-xs-12
         %hr/

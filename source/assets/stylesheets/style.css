@@ -295,8 +295,21 @@ label {
           color: #ccc;
         }
   .navbar .navbar-nav li.active a,
-  .navbar .navbar-nav li.active a:hover {
+  .navbar .navbar-nav li.active a:hover,
+  .navbar-inverse .navbar-nav > .active > a:focus,
+  .navbar-inverse .navbar-nav > .active > a,
+  .navbar-inverse .navbar-nav > .active > a:active {
     background-color: #4B83E7;
+    color: #fff;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:focus {
+    color: #777;
+  }
+
+  .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #4B83E7;
+    color: #fff;
   }
 
   @media (max-width: 992px) {
@@ -603,6 +616,10 @@ label {
     color: #fff;
   }
 
+  #learn-more p {
+    font-size: 35px;
+  }
+
   #services [class^="fa-"], #services [class*=" fa-"] {
     color: #4B83E7;
   }
@@ -812,7 +829,7 @@ label {
  *
  *
  */
-#about {
+#team {
   padding-top: 65px;
 }
 .team { text-align: center; }
@@ -900,6 +917,38 @@ label {
       padding-top: 3px;
     }
   }
+
+/* Expectation */
+
+.expectation i.fa {
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.expectation {
+  text-align: center;
+}
+
+.expectation h3 {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.expectation .btn {
+  margin: 5px 10px 0 0;
+}
+.expectation p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 26px;
+  padding-bottom: 30px;
+}
+
+.expectation .round-button {
+  background-color: #FFF;
+  color: #4B83E7;
+}
 
 /*  CONTACT
  *    stylings for contact
@@ -997,15 +1046,19 @@ label {
   color: rgba(255,255,255, .7);
 }
 
-#contact input[type="email"], #contact textarea {
+#contact input, #contact textarea {
+  width: 100%;
   margin-bottom: 2rem !important;
   background: hsla(0,0%,100%,.15);
   border-radius: 4px;
   color: #fff;
   font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   outline: none;
+}
+
+#contact [class^='col-md-'] {
+  margin-bottom: 0;
 }
 
 #contact .round-button {
@@ -1017,15 +1070,4 @@ label {
   #contact h1 {
     font-size: 30px;
   }
-}
-
-/* Expectation */
-
-#expectation i.fa, #expectation h2, #expectation p {
-  color: #fff;
-  padding-bottom: 30px;
-}
-
-#expectation h2 {
-  text-transform: uppercase;
 }
