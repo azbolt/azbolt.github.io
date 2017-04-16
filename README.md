@@ -12,3 +12,7 @@ Running Local Server
 
 Deploy to Github Pages
 * `rake deploy`
+
+Gulp uncss
+* Using `gulp uncss` to remove unnecessary css
+* Use minified classes in ignore list
