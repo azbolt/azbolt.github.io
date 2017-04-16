@@ -496,8 +496,17 @@ label {
     margin-bottom: 30px;
 }
 
+#learn-more .round-button, #services .round-button {
+  background-color: #4B83E7;
+  color: #fff;
+}
+
+#learn-more p {
+  font-size: 35px;
+}
+
 @media (max-width: 420px) {
-  #learn-more h2 {
+  #learn-more p {
       font-size: 18px;
       line-height: 30px;
   }
@@ -609,15 +618,6 @@ label {
     color: #656b6f;
     margin-bottom: 30px;
     width: 90%;
-  }
-
-  #learn-more .round-button, #services .round-button {
-    background-color: #4B83E7;
-    color: #fff;
-  }
-
-  #learn-more p {
-    font-size: 35px;
   }
 
   #services [class^="fa-"], #services [class*=" fa-"] {

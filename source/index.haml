@@ -229,7 +229,7 @@
 .footer
   .fixed-container
     .row#contact
-      .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
+      .col-md-8.col-sm-10.col-xs-12.col-md-offset-2.col-sm-offset-1
         .text-center
           %h1 Get Started Now
           %h4 Interested in working together? Send us your request and we'll get back to you right away on how to get moving.
@@ -241,17 +241,17 @@
             %form#gform{action: "//script.google.com/macros/s/AKfycbxNm_YCodShmoGNc7-GaygmZarPe52m-FdIEacPpjmue6vJBFZ5/exec", method: "post"}
               .container
                 .row
-                  .col-md-4.col-sm-4.col-xs-12.col-md-offset-2.col-sm-offset-2
+                  .col-md-4.col-sm-6.col-xs-12.col-md-offset-2
                     %input{name: "first_name", placeholder: "First Name", required: "", type: "first_name"}/
-                  .col-md-4.col-sm-4.col-xs-12
+                  .col-md-4.col-sm-6.col-xs-12
                     %input{name: "last_name", placeholder: "Last Name", required: "", type: "last_name"}/
                 .row
-                  .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
+                  .col-md-8.col-sm-12.col-xs-12.col-md-offset-2
                     %input{name: "email", placeholder: "Your email", required: "", type: "email"}/
                 .row
-                  .col-md-8.col-sm-8.col-xs-12.col-md-offset-2.col-sm-offset-2
+                  .col-md-8.col-sm-12.col-xs-12.col-md-offset-2
                     %textarea{name: "message", placeholder: "Your message", required: "", rows: "5"}
-                %button.round-button#contact-button.col-md-4.col-sm-6.col-xs-12.col-md-offset-4.col-sm-offset-3{type: "submit"}
+                %button.round-button#contact-button.col-md-4.col-sm-8.col-xs-12.col-md-offset-4.col-sm-offset-2{type: "submit"}
                   %span
                     Send message
     .row
