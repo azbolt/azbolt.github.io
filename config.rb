@@ -25,6 +25,22 @@ activate :deploy do |deploy|
   deploy.build_before = false
 end
 
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.branch = 'master'
+    deploy.build_before = false
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.remote = 'gh-pages'
+    deploy.branch = 'gh-pages'
+    deploy.build_before = false
+  end
+end
+
 # Build-specific configuration
 configure :build do
   activate :imageoptim

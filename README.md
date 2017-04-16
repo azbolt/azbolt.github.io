@@ -11,7 +11,9 @@ Running Local Server
 * `http://localhost:4567/` to access your middleman site
 
 Deploy to Github Pages
-* `rake deploy`
+* `git remote add gh-pages git@github.com:azbolt/azbolt-staging.git` for adding staging repository to remote list.
+* `rake deploy:production` will deploy to `azbolt.github.io`
+* `rake deploy:staging` will deploy to `azbolt-staging`
 
 Gulp uncss
 * Using `gulp uncss` to remove unnecessary css
