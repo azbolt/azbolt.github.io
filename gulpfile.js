@@ -15,7 +15,9 @@ gulp.task('uncss', function() {
                  '.navigation.open li:nth-of-type(3)',
                  '.navigation.open li:nth-of-type(4)',
                  '#mc_embed_signup div.mce_inline_error',
-                 '.navbar.affix-top', '.navbar.affix'
+                 '.navbar.affix-top', '.navbar.affix',
+                 '.navbar-inverse .navbar-nav > .active > a',
+                 '.navbar-inverse .navbar-nav > .active > a:focus'
                ]
     }))
     .pipe(csso())
