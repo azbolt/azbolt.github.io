@@ -1,0 +1,30 @@
+- link_to_home = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#home' : '/'
+- link_to_contact = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#contact' : '/#contact'
+- link_to_services = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#services' : '/#services'
+- link_to_process = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#process' : '/#process'
+
+#navbar.navbar.navbar-inverse
+  .fixed-container
+    .navbar-header
+      button.navbar-toggle *{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+        span.fa.fa-bars.fa-2x
+      a.navbar-brand *{href: "#{link_to_home}"}
+        = image_tag 'assets/images/upstackstudio-logo.png', alt: 'Upstack Studio Logo', id: 'upstackstudio-logo'
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a *{href: "/about"}
+            i.fa.fa-users
+            | About
+        li
+          a *{href: "#{link_to_process}"}
+            i.fa.fa-gear
+            | Process
+        li
+          a *{href: "#{link_to_services}"}
+            span.glyphicon.glyphicon-briefcase
+            | Services
+        li
+          a *{href: "#{link_to_contact}"}
+            i.fa.fa-inbox
+            | Contact
