@@ -1,7 +1,7 @@
 {
-  "name": "azbolt.com",
+  "name": "upstackstudio.com",
   "version": "0.0.1",
-  "description": "Azbolt",
+  "description": "Upstack Studio",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/azbolt/azbolt.github.io.git"
+    "url": "https://github.com/upstackstudio/upstackstudio.github.io.git"
   },
   "author": "Adrian Ching",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azbolt/azbolt.github.io/issues"
+    "url": "https://github.com/upstackstudio/upstackstudio.github.io/issues"
   },
-  "homepage": "https://github.com/azbolt/azbolt.github.io#readme"
+  "homepage": "https://github.com/upstackstudio/upstackstudio.github.io#readme"
 }

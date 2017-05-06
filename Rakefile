@@ -17,7 +17,7 @@ namespace :deploy do
   task :staging do
     sh 'rm -rf build'
     sh 'bundle exec middleman build'
-    sh 'rm -rf build/CNAME ; touch build/CNAME ; echo "staging.azbolt.com" > build/CNAME'
+    sh 'rm -rf build/CNAME ; touch build/CNAME ; echo "staging.upstackstudio.com" > build/CNAME'
     sh 'gulp buildcss'
     deploy :staging
   end
