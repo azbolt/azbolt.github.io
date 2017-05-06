@@ -1,4 +1,4 @@
-# The Official Website of Azbolt
+# The Official Website of Upstack Studio
 
 Setup
 * Clone the repository into your local directory
@@ -11,9 +11,9 @@ Running Local Server
 * `http://localhost:4567/` to access your middleman site
 
 Deploy to Github Pages
-* `git remote add gh-pages git@github.com:azbolt/azbolt-staging.git` for adding staging repository to remote list.
-* `rake deploy:production` will deploy to `azbolt.github.io`
-* `rake deploy:staging` will deploy to `azbolt-staging`
+* `git remote add gh-pages git@github.com:upstackstudio/upstackstudio-staging.git` for adding staging repository to remote list.
+* `rake deploy:production` will deploy to `upstackstudio.github.io`
+* `rake deploy:staging` will deploy to `upstackstudio-staging`
 
 Gulp uncss
 * Using `gulp uncss` to remove unnecessary css
