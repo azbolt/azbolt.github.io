@@ -249,7 +249,7 @@ title: Upstack Studio - Your Trusted Ruby on Rails Agency In Asia
           #contact-form
             .alert.alert-danger#email-invalid{style: "display:none;"}
               Email is invalid. Please use a real email so that we can contact you.
-            %form#gform{action: "//script.google.com/macros/s/AKfycbxNm_YCodShmoGNc7-GaygmZarPe52m-FdIEacPpjmue6vJBFZ5/exec", method: "post"}
+            %form#gform{action: "#{data.site.contact_form_url}", method: "post"}
               .container
                 .row
                   .col-md-5.col-sm-6.col-xs-12.col-md-offset-1
