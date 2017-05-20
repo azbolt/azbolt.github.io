@@ -8,7 +8,7 @@ title: Upstack Studio - Your Trusted Ruby on Rails Agency In Asia
       %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
         %span.fa.fa-bars.fa-2x
       %a.navbar-brand{href: "#home"}
-        %img#upstackstudio-logo{alt: "Upstack Studio Logo", src: "assets/images/upstackstudio-logo.png"}
+        = image_tag 'assets/images/upstackstudio-logo.png', alt: 'Upstack Studio Logo', id: 'upstackstudio-logo'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
         %li
@@ -34,7 +34,7 @@ title: Upstack Studio - Your Trusted Ruby on Rails Agency In Asia
 
 / Features Section
 #home.section.welcome
-  %img.background{alt: "Upstack Studio Background", src: "assets/images/background.jpg"}/
+  = image_tag 'assets/images/background.jpg', alt: 'Upstack Studio Background', class: 'background'
   .container
     .content.center
       %span.logo.glyphicon
@@ -273,4 +273,4 @@ title: Upstack Studio - Your Trusted Ruby on Rails Agency In Asia
     %i.fa.fa-heart
     by
     = link_to 'Upstack Studio', data.site.url
-%script{"data-cfasync" => "false", src: "assets/javascripts/contact-form.js", type: "text/javascript"}
+= javascript_include_tag 'contact-form', type: "text/javascript", data: { cfasync: false }

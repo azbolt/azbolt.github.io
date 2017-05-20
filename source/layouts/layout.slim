@@ -37,13 +37,13 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
       
     = partial 'layouts/render_blocking_css'
     = partial 'layouts/loadCSS'
-
-    link as="style" href="assets/stylesheets/all.css" onload="this.rel='stylesheet'" rel="preload"
+    
+    = stylesheet_link_tag('all', as: 'style', onload: "this.rel='stylesheet'", rel: 'preload')
     noscript
-      link href="assets/stylesheets/all.css" rel="stylesheet"
-    link as="style" href="assets/fonts/font-awesome/css/font-awesome.min.css" onload="this.rel='stylesheet'" rel="preload"
-      noscript
-        link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+      = stylesheet_link_tag 'all'
+    = stylesheet_link_tag('assets/fonts/font-awesome/css/font-awesome.min.css', as: 'style', onload: "this.rel='stylesheet'", rel: 'preload')
+    noscript
+      = stylesheet_link_tag 'assets/fonts/font-awesome/css/font-awesome.min.css'
         
     javascript:
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?

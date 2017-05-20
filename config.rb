@@ -2,6 +2,7 @@ page 'sitemap.html', layout: false
 page 'sitemap.xml', layout: false
 page 'feed.xml', layout: false
 page '404.html', directory_index: false
+page 'ruby-on-rails-asia.html', layout: 'layout'
 
 # Reload the browser automatically whenever files change
 configure :development do
