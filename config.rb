@@ -1,8 +1,6 @@
 page 'sitemap.html', layout: false
 page 'sitemap.xml', layout: false
-page 'feed.xml', layout: false
 page '404.html', directory_index: false
-page 'ruby-on-rails-asia.html', layout: 'layout'
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -54,7 +52,6 @@ configure :build do
   activate :minify_html
   activate :relative_assets
   activate :robots, rules: [
-    { user_agent: '*', allow: ['/'] }
-  ],
-  sitemap: "#{data.site.url}/sitemap.xml"
+    { user_agent: '*', allow: ['/'], disallow: ['/portfolio.html'] }
+  ], sitemap: "#{data.site.url}/sitemap.xml"
 end
