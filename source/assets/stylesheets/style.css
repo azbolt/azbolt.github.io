@@ -1031,6 +1031,7 @@ img.background {
     text-align: center;
 }
 .footer hr {
+    border-top: 1px solid #eee;
     border-color: #999;
     margin: 0 auto;
 }
@@ -1041,6 +1042,9 @@ img.background {
 }
 i.fa.fa-heart {
     color: red;
+}
+#other_services_link {
+  margin-top: 20px;
 }
 /* Contact */
 
