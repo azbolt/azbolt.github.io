@@ -1044,7 +1044,15 @@ i.fa.fa-heart {
     color: red;
 }
 #other_services_link {
-  margin-top: 20px;
+    margin-top: 20px;
+}
+#follow_us {
+    margin-top: 20px;
+}
+#follow_us a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #eee;
 }
 /* Contact */
 
