@@ -67,5 +67,9 @@
       $(".navbar-collapse.in").collapse('hide');
     });
 
+		// Add active class to navbar for page specific tab
+		var pathname = window.location.pathname.replace(/\/\s*$/, "");
+		$('.nav > li > a[href="'+pathname+'"]').parent().addClass('active');
+
 	}); // end of document ready
 })(jQuery); // end of jQuery name space

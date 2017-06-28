@@ -1,0 +1,31 @@
+- link_to_contact = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#contact' : '/#contact'
+
+.footer
+  .container
+    .row
+      .col-md-4#vertical-menu
+        h5 Services
+        = link_to 'React Native', '/'
+        = link_to 'Ruby on Rails', '/ruby-on-rails-asia'
+      .col-md-4#vertical-menu
+        h5 Follow Us
+        = link_to 'Facebook', 'https://www.facebook.com/upstackstudio', target: '_blank'
+        = link_to 'Twitter', 'https://www.twitter.com/upstackstudio', target: '_blank'
+        = link_to 'Instagram', 'https://www.instagram.com/upstackstudio', target: '_blank'
+        = link_to 'LinkedIn', 'https://www.linkedin.com/company/upstack-studio', target: '_blank'
+        = link_to 'Blog', 'https://blog.upstackstudio.com', target: '_blank'
+      .col-md-4#vertical-menu
+        h5 Contact
+        = link_to 'Hire Us', "#{link_to_contact}"
+        p contact@upstackstudio.com
+        h5 Location
+        p Unit 3A-01A, Level 3A, Glo Damansara,
+        p 699, Jalan Damansara,
+        p Taman Tun Dr Ismail,
+        p 60000 Kuala Lumpur.
+              
+  p.copyright
+    | Made with 
+    i.fa.fa-heart
+    |  by 
+    = link_to 'Upstack Studio', '/'

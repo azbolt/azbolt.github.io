@@ -5,36 +5,6 @@ changefreq: yearly
 priority: 0.9
 ---
 
-#navbar.navbar.navbar-inverse
-  .fixed-container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
-        %span.fa.fa-bars.fa-2x
-      %a.navbar-brand{href: "#home"}
-        = image_tag 'assets/images/upstackstudio-logo.png', alt: 'Upstack Studio Logo', id: 'upstackstudio-logo'
-    .collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li
-          %a{href: "#learn-more"}
-            %span.glyphicon.glyphicon-user>
-            About
-        %li
-          %a{href: "#process"}
-            %i.fa.fa-gear>
-            Process
-        -# %li
-        -#   %a{href: "#team"}
-        -#     %span.glyphicon.glyphicon-briefcase>
-        -#     Team
-        %li
-          %a{href: "#services"}
-            %span.glyphicon.glyphicon-briefcase>
-            Services
-        %li
-          %a{href: "#contact"}
-            %i.fa.fa-inbox>
-            Contact
-
 / Features Section
 #home.section.welcome
   = image_tag 'assets/images/background.jpg', alt: 'Upstack Studio Background', class: 'background'
@@ -96,37 +66,6 @@ priority: 0.9
           .service-icon
             %i.fa.fa-rocket{"data-toggle" => "tooltip", title: "Once you are ready to ship your project, we will help you deploy it to your own infrastructure."}
             %span PRODUCTION
-
-/ Team Section
--# #team.section
--#   .fixed-container
--#     .content.team
--#       %h1 Meet the Team
--#       .row
--#         .col-md-6.col-sm-6.col-xs-12
--#           %h2 Adrian Ching
--#           %h3.italic Founder/Developer
--#           .portrait
--#             %img{alt: "Adrian Ching", src: "assets/images/adrianching.jpg"}/
--#           %p Ruby on Rails/React Native Developer.
--#           .social-media
--#             %a{"data-toggle" => "tooltip", href: "https://twitter.com/adrianchinghc", title: "Twitter"}
--#               %i.fa.fa-twitter
--#             %a{"data-toggle" => "tooltip", href: "https://github.com/adrianchinghc", title: "Github"}
--#               %i.fa.fa-github
--#         .col-md-6.col-sm-6.col-xs-12
--#           %h2 Soo Yang
--#           %h3.italic Founder/Developer
--#           .portrait
--#             %img{alt: "Soo Yang", src: "assets/images/sooyang.jpg"}/
--#           %p Ruby on Rails/React Native Developer.
--#           .social-media
--#             %a{"data-toggle" => "tooltip", href: "https://github.com/sooyang", title: "Github"}
--#               %i.fa.fa-github
--#       %a.scroll-down{href: "#contact"}
--#         %button.round-button
--#           %span
--#             Hire Us
 
 / Portfolio Section
 / On smaller devices, portfolio becomes auto height and no fixed
@@ -240,9 +179,9 @@ priority: 0.9
 -#             #themeforest.tab-pane.fade ThemeForest is an Envato Marketplace. At ThemeForest you can buy and sell HTML templates as well as themes for popular CMS products like WordPress, Joomla and Drupal with prices ranging from just $5 up to $40. Items are priced on the complexity, quality and use of the file. The site is home to a bustling community of web designers and developers and is the biggest marketplace of its kind.
 -#             #mojothemes.tab-pane.fade At MOJO Themes we’ve created an open marketplace to sell premium WordPress themes and templates. Also buyers can browse quality items that have been reviewed by our expert team which include free support, upgrades and rich documentation.
 -#         .empty.col-md-1.col-sm-1.col-xs-12
-.footer
+#contact.section.short
   .fixed-container
-    .row#contact
+    .row
       .col-md-8.col-sm-10.col-xs-12.col-md-offset-2.col-sm-offset-1
         .text-center
           %h2 We’d love to work with you.
@@ -270,20 +209,5 @@ priority: 0.9
                     Let's Make Something Great Together
     .row
       .empty.col-md-12.col-sm-12.col-xs-12
-        %hr/
-  #other_services_link.text-center
-    Need a mobile app? We do
-    = link_to 'React Native', '/'
-    too!
-  #follow_us.text-center
-    = link_to 'Facebook', 'https://www.facebook.com/upstackstudio', target: '_blank'
-    = link_to 'Twitter', 'https://www.twitter.com/upstackstudio', target: '_blank'
-    = link_to 'Instagram', 'https://www.instagram.com/upstackstudio', target: '_blank'
-    = link_to 'LinkedIn', 'https://www.linkedin.com/company/upstack-studio', target: '_blank'
-    = link_to 'Blog', 'https://blog.upstackstudio.com', target: '_blank'
-  %p.copyright
-    Made with
-    %i.fa.fa-heart
-    by
-    = link_to 'Upstack Studio', '/'
+        %hr
 = javascript_include_tag 'contact-form', type: "text/javascript", data: { cfasync: false }
