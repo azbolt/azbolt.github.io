@@ -75,6 +75,7 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
     = favicon_tag 'favicon.png', rel: 'apple-touch-icon', type: 'image/png'
 
   body data-spy="scroll" data-target="#navbar" data-offset="70" class=page_classes
+    = partial 'layouts/fb_sdk'
     = partial 'layouts/navbar'
     = yield
     = partial 'layouts/footer'
