@@ -888,6 +888,7 @@ img.background {
 
 #team {
     padding-top: 65px;
+    min-height: 0;
 }
 .team {
     text-align: center;
