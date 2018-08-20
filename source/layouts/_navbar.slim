@@ -1,10 +1,10 @@
-- link_to_home = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#home' : '/'
-- link_to_contact = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#contact' : '/#contact'
-- link_to_services = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#services' : '/#services'
-- link_to_process = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#process' : '/#process'
+- link_to_home = page_classes == 'index' ? '#home' : '/'
+- link_to_contact = page_classes == 'index' ? '#contact' : '/#contact'
+- link_to_services = page_classes == 'index' ? '#services' : '/#services'
+- link_to_process = page_classes == 'index' ? '#process' : '/#process'
 
 #navbar.navbar.navbar-inverse
-  .fixed-container
+  .container
     .navbar-header
       button.navbar-toggle *{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
         span.fa.fa-bars.fa-2x

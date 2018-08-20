@@ -1,20 +1,20 @@
-- link_to_contact = page_classes == ('index' || 'ruby-on-rails-asia ruby-on-rails-asia-index') ? '#contact' : '/#contact'
+- link_to_contact = page_classes == 'index' ? '#contact' : '/#contact'
 
 .footer
   .container
     .row
-      .col-md-4#vertical-menu
+      .col-md-4.col-sm-6#vertical-menu
         h5 Services
-        = link_to 'React Native', '/'
-        = link_to 'Ruby on Rails', '/ruby-on-rails-asia'
-      .col-md-4#vertical-menu
+        p React Native
+        p Ruby on Rails
+      .col-md-4.col-sm-6#vertical-menu
         h5 Follow Us
         = link_to 'Facebook', 'https://www.facebook.com/upstackstudio', target: '_blank'
         = link_to 'Twitter', 'https://www.twitter.com/upstackstudio', target: '_blank'
         = link_to 'Instagram', 'https://www.instagram.com/upstackstudio', target: '_blank'
         = link_to 'LinkedIn', 'https://www.linkedin.com/company/upstack-studio', target: '_blank'
         = link_to 'Blog', 'https://blog.upstackstudio.com', target: '_blank'
-      .col-md-4#vertical-menu
+      .col-md-4.col-sm-6#vertical-menu
         h5 Contact
         = link_to 'Hire Us', "#{link_to_contact}"
         p contact@upstackstudio.com

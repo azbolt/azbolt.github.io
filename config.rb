@@ -52,6 +52,6 @@ configure :build do
   activate :minify_html
   activate :relative_assets
   activate :robots, rules: [
-    { user_agent: '*', allow: ['/'], disallow: ['/portfolio.html'] }
+    { user_agent: '*', allow: ['/'], disallow: ['/portfolio'] }
   ], sitemap: "#{data.site.url}/sitemap.xml"
 end

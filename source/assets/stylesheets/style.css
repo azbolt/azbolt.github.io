@@ -195,11 +195,7 @@ body.modal-open,
 .modal-open .navbar-fixed-top {
     margin-right: 0;
 }
-@media (max-width: 767px) {
-    .modal {
-        overflow-y: hidden;
-    }
-}
+
 
 /*  NAVBAR
  *    stylings for fixed navbar
@@ -266,7 +262,7 @@ body.modal-open,
 .navbar .navbar-toggle {
     outline: none;
     border-color: transparent;
-    margin: 20px 0 0 0;
+    margin: 20px 10px 0 0;
     padding: 0;
 }
 .navbar .navbar-toggle:active,
@@ -330,17 +326,6 @@ body.modal-open,
     background-color: #4B83E7;
     color: #fff;
 }
-@media (max-width: 992px) {
-    .navbar .navbar-nav li a {
-        padding: 0 15px;
-    }
-    .navbar a.navbar-brand {
-        padding-right: 5px;
-    }
-    .navbar .navbar-collapse.collapse {
-        display: none;
-    }
-}
 /*  SECTION
  *    stylings for sections
  *
@@ -351,7 +336,7 @@ body.modal-open,
     position: relative;
     min-height: 100%;
     z-index: 1;
-    padding-top: 105px;
+    padding: 105px 0 105px 0;
     background-color: #4B83E7;
     transition: background-color 1s;
     -webkit-transition: background-color 1s;
@@ -386,20 +371,26 @@ body.modal-open,
 }
 /* Image BG Section */
 
-.section.image {} .section.image h3 {
+.section.image h3 {
+    margin: 30px 0 30px 0;
     color: rgba(255, 255, 255, .7);
 }
 /* WELCOME SECTION */
 
 .section.welcome {
     padding-top: 0;
+    min-height: 0;
 }
 #upstackstudio-logo {
     height: 30px;
-    margin-bottom: 5px;
+    margin: 0 0 5px 10px;
+}
+.section.welcome .portfolio {
+    color: #4B83E7;
 }
 .section.welcome .content {
     text-align: center;
+    padding: 100px 0 100px 0;
 }
 .section.welcome a.scroll-down.btn {
     white-space: normal;
@@ -417,14 +408,21 @@ img.background {
     position: fixed;
     z-index: -1;
 }
-.section h1 {
+.welcome h1 {
     display: block;
     text-align: center;
     font-size: 50px;
     color: #fff;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 1.5;
 }
 .welcome h2 {
+    font-size: 25px;
+    width: 50%;
     color: rgba(255, 255, 255, .7);
+    margin: 0 auto;
+    line-height: 1.5;
 }
 .welcome h3,
 .welcome h4 {
@@ -455,7 +453,7 @@ img.background {
     width: 100px;
     height: 100px;
     padding-top: 15px;
-    margin: 10% 0 30px 0;
+    margin: 30px 0 30px 0;
     font-size: 60px;
 }
 .welcome span.logo.glyphicon-leaf {
@@ -479,49 +477,6 @@ img.background {
 .fixed-container.full .content.affix {
     width: 100%;
 }
-/* For extra small devices, turn off affix properties */
-
-@media (max-width: 420px) {
-    img.background {
-        height: 100%;
-    }
-    .section {
-        height: auto;
-        padding-top: 70px;
-    }
-    /*.section h1 {
-      font-size: 30px;
-      margin: 18px 0 35px 0;
-    }*/
-
-    #expectation h2,
-    #process h2 {
-        font-size: 30px !important;
-        margin: 18px 0 35px 0;
-    }
-    #home h1 {
-        font-size: 25px;
-    }
-    .section.welcome {
-        height: 100%;
-    }
-    span.logo.glyphicon {
-        margin-top: 20px;
-    }
-}
-@media (max-width: 767px) {
-    .section .content {
-        text-align: center;
-    }
-    .section.welcome {
-        overflow: hidden;
-        height: auto;
-    }
-    img.background {
-        background-attachment: scroll;
-        position: absolute;
-    }
-}
 /* Learn More section */
 
 .content.learn-more.text-center {
@@ -541,15 +496,6 @@ img.background {
 #learn-more p {
     font-size: 35px;
 }
-@media (max-width: 420px) {
-    #learn-more p {
-        font-size: 18px;
-        line-height: 30px;
-    }
-    #learn-more .round-button span {
-        font-size: 12px;
-    }
-}
 /*  process
  *    stylings for process content
  *    image background parallax
@@ -560,7 +506,7 @@ img.background {
 #process {
     color: #444;
     min-height: 0;
-    padding-bottom: 20px;
+    padding-bottom: 125px;
     position: relative;
     overflow: hidden;
     background-color: #000;
@@ -613,19 +559,15 @@ img.background {
     display: block;
     margin-top: 20px;
 }
-@media (max-width: 420px) {
-    #process {
-        background-attachment: scroll;
-    }
-}
 
-/* ABOUT
- *   stylings for about page
- *
- */
+/*******************************************************/
+/******************** About Section ********************/
+/*******************************************************/
+
 #about {
     background-color: #000;
     min-height: 0;
+    padding-top: 175px;
 }
 #about .background {
     position: absolute;
@@ -649,11 +591,9 @@ img.background {
     color: rgba(255, 255, 255, 0.7);
 }
 
-/*  PORTFOLIO
- *    stylings for portfolio
- *
- *
- */
+/*******************************************************/
+/******************** Services Section ****************/
+/*******************************************************/
 
 #services {
     min-height: 0;
@@ -699,103 +639,7 @@ img.background {
     width: 80%;
     color: #656b6f;
 }
-.gallery {
-    padding: 0;
-    text-align: justify;
-    font-size: 0.1px;
-    margin: 0;
-    width: 100%;
-    background-color: #666;
-}
-.gallery:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-.gallery .mix {
-    overflow: hidden;
-    height: 300px;
-    padding: 0;
-    display: none;
-    opacity: 0;
-    vertical-align: top;
-    margin: 0;
-    background: #ccc;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    line-height: 200px;
-}
-.gallery a.mix-cover,
-.gallery span.cover {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.gallery a.mix-cover {
-    position: relative;
-    -webkit-transition: top .5s;
-    transition: top .5s;
-}
-.gallery a.mix-cover:hover {
-    top: 100%;
-}
-.gallery span.cover {
-    position: absolute;
-    top: -100%;
-    background-color: #f4d432;
-}
-.gallery span.cover span {
-    color: #fff;
-    position: absolute;
-    height: 50px;
-    top: 50%;
-    left: 0;
-    right: 0;
-    margin-top: -25px;
-    line-height: 50px;
-}
-.gallery img {
-    min-width: 100%;
-    height: 100%;
-    vertical-align: 0;
-}
-@media (max-width: 768px) {
-    .gallery a.mix-cover:hover {
-        top: 0;
-    }
-    .gallery span.cover {
-        height: 50px;
-        top: auto;
-        bottom: 0;
-        z-index: 100;
-    }
-    .gallery span.cover h2 {
-        font-size: 24px;
-    }
-    .gallery img,
-    .gallery .mix {
-        width: 100%;
-        height: auto;
-        font-size: 0;
-        line-height: 0;
-    }
-    #services h2 {
-        text-align: center;
-        font-size: 30px;
-    }
-    #services .services-icons p {
-        width: 100%;
-    }
-}
-@media (max-width: 420px) {
-    #services h2 {
-        text-align: center;
-    }
-    #services .services-icons p {
-        width: 100%;
-    }
-}
+
 /*  CLIENTS and TESTIMONIALS
  *    stylings for testimonials
  *
@@ -854,32 +698,7 @@ img.background {
     font-size: 14px;
     line-height: 24px;
 }
-@media (max-width: 768px) {
-    #clients img.logo {
-        width: 50%;
-    }
-    .welcome span.logo.glyphicon {
-        margin-top: 25%;
-    }
-    .learn-more h2 {
-        font-size: 30px;
-    }
-    .welcome h4 {
-        width: 65%;
-    }
-}
-@media (max-width: 420px) {
-    #clients {
-        background-attachment: scroll;
-    }
-    .welcome span.logo.glyphicon {
-        margin-top: 20%;
-    }
-    .welcome #company_name {
-        font-size: 20px;
-        width: 80%;
-    }
-}
+
 /*  TEAM
  *    stylings for about us section
  *
@@ -900,10 +719,12 @@ img.background {
     color: #444;
     margin: 0;
     line-height: 40px;
+    font-size: 20px;
 }
 .team h3 {
-  color: #4B83E7;
+    color: #4B83E7;
     line-height: 18px;
+    font-size: 15px;
 }
 .team .btn {
     margin: 5px 10px 0 0;
@@ -965,22 +786,6 @@ img.background {
     color: #fff;
     border-color: #fff;
 }
-/* Portrait Responsive Sizes */
-
-@media (max-width: 979px) {
-    .portrait {
-        width: 200px;
-        height: 200px;
-    }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-    .team .social-media a {
-        height: 30px;
-        width: 30px;
-        font-size: 15px;
-        padding-top: 3px;
-    }
-}
 /* Expectation */
 
 .expectation i.fa {
@@ -1008,36 +813,21 @@ img.background {
     background-color: #FFF;
     color: #4B83E7;
 }
+
+#expectation {
+    min-height: 0;
+}
+
 #expectation h2 {
     display: block;
     text-align: center;
     font-size: 50px;
     color: #fff;
 }
-/*  CONTACT
- *    stylings for contact
- *    Basic form styles at the beginning of css file
- *
- */
 
-.contact h3 {
-    margin-top: 0;
-}
-.contact p {
-    color: #666;
-}
-.contact span.glyphicon {
-    color: #444;
-    margin-right: 10px;
-}
-.contact .btn {
-    width: 100%;
-}
-/*  FOOTER
- *    stylings for footer
- *
- *
- */
+/*******************************************************/
+/******************** Footer Section *******************/
+/*******************************************************/
 
 .footer {
     padding-top: 20px;
@@ -1097,7 +887,25 @@ i.fa.fa-heart {
     color: #eee;
     display: block;
 }
-/* Contact */
+
+/*******************************************************/
+/******************** Contact Section ******************/
+/*******************************************************/
+
+.contact h3 {
+    margin-top: 0;
+}
+.contact p {
+    color: #666;
+}
+.contact span.glyphicon {
+    color: #444;
+    margin-right: 10px;
+}
+.contact .btn {
+    width: 100%;
+}
+
 #contact {
     padding-top: 40px;
     padding-bottom: 0px;
@@ -1142,13 +950,201 @@ i.fa.fa-heart {
     border-color: #999;
     margin: 0 auto;
 }
+
+/*******************************************************/
+/******************** Media Queries ********************/
+/*******************************************************/
+
+/* Phone - @media (max-width: 767px) */
+/* Tablet - @media (min-width: 768px) and (max-width: 991px) */
+/* Laptop - @media (min-width: 992px) and (max-width: 1199px) */
+/* Large Desktop - @media (min-width: 1200px) */
+
 @media (max-width: 420px) {
     #contact h2 {
         font-size: 30px;
     }
+
+    img.background {
+        height: 100%;
+    }
+
+    .section {
+        height: auto;
+        padding-top: 70px;
+    }
+
+    #expectation h2,
+    #process h2 {
+        font-size: 30px !important;
+        margin: 18px 0 35px 0;
+    }
+
+    #home h1 {
+        font-size: 25px;
+    }
+
+    .section.welcome {
+        height: 100%;
+    }
+
+    span.logo.glyphicon {
+        margin-top: 20px;
+    }
+
+    #learn-more p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #learn-more .round-button span {
+        font-size: 12px;
+    }
+
+    #process {
+        background-attachment: scroll;
+    }
+
+    #services h2 {
+        text-align: center;
+    }
+
+    #services .services-icons p {
+        width: 100%;
+    }
+
+    #clients {
+        background-attachment: scroll;
+    }
+
+    .welcome span.logo.glyphicon {
+        margin-top: 20%;
+    }
+
+    .welcome #company_name {
+        font-size: 20px;
+        width: 80%;
+    }
 }
+
 @media (max-width: 767px) {
+    .section .content {
+        text-align: center;
+    }
+
+    .section.welcome .content {
+        padding: 50px 0 50px 0;
+    }
+
+    .section.welcome {
+        overflow: hidden;
+        height: auto;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+
+    .welcome h2 {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .welcome #company_name {
+        font-size: 20px;
+    }
+
+    #learn-more p {
+        font-size: 25px;
+    }
+
+    img.background {
+        background-attachment: scroll;
+        position: absolute;
+    }
+
+    #process h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #process .service-icon {
+        margin-bottom: 15px;
+    }
+
+    .learn-more h2 {
+        font-size: 30px;
+    }
+
+    #learn-more .round-button,
+    #services .round-button {
+        width: 80%;
+    }
+
+    #services .service-section p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #services h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #services .services-icons p {
+        width: 100%;
+    }
+
     #vertical-menu {
         margin-top: 30px;
+    }
+
+    .modal {
+        overflow-y: hidden;
+    }
+
+    #clients img.logo {
+        width: 50%;
+    }
+
+    #contact h4 {
+        width: 80%;
+        margin: 0 auto 25px auto;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .navbar-nav li a {
+        padding: 0 15px;
+    }
+
+    .navbar a.navbar-brand {
+        padding-right: 5px;
+    }
+    
+    .navbar .navbar-collapse.collapse {
+        display: none;
+    }
+
+    .welcome h2 {
+        width: 80%;
+    }
+}
+
+/* Portrait Responsive Sizes */
+
+@media (max-width: 979px) {
+    .portrait {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .team .social-media a {
+        height: 30px;
+        width: 30px;
+        font-size: 15px;
+        padding-top: 3px;
     }
 }

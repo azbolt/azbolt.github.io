@@ -10,14 +10,6 @@
         }
       });
 
-    // MixItUp Grid
-    // $(function(){
-    //   $('.gallery').mixitup({
-    //     easing: 'snap',
-    //     resizeContainer: true
-    //   });
-		// });
-
     // client tab init
     $(document).off('click.tab.data-api');
     $('a.tab').hover(function () { $(this).tab('show'); });

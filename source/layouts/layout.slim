@@ -70,6 +70,8 @@ html itemscope='' itemtype='http://schema.org/WebPage' lang=data.site.language
       WebFontConfig={google:{families:["Montserrat:200,400,700"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();
 
     = javascript_include_tag 'all.js', async: true
+    - if !development?
+      = javascript_include_tag '//js.hs-scripts.com/4791925.js', async: true, defer: true, id: 'hs-script-loader'
     
     = favicon_tag 'favicon.png'
     = favicon_tag 'favicon.png', rel: 'apple-touch-icon', type: 'image/png'
