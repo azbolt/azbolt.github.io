@@ -1,6 +1,5 @@
 page 'sitemap.html', layout: false
 page 'sitemap.xml', layout: false
-page '404.html', directory_index: false
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -52,6 +51,6 @@ configure :build do
   activate :minify_html
   activate :relative_assets
   activate :robots, rules: [
-    { user_agent: '*', allow: ['/'], disallow: ['/portfolio'] }
+    { user_agent: '*', allow: ['/'], disallow: ['/404'] }
   ], sitemap: "#{data.site.url}/sitemap.xml"
 end
