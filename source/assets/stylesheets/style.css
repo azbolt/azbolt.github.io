@@ -430,6 +430,11 @@ img.background {
     width: 50%;
     margin: 0 auto;
 }
+
+.welcome #see-our-work {
+    margin-top: 40px;
+}
+
 .welcome .scroll-down {
     margin-top: 40px;
 }
@@ -1128,7 +1133,7 @@ i.fa.fa-heart {
     .navbar a.navbar-brand {
         padding-right: 5px;
     }
-    
+
     .navbar .navbar-collapse.collapse {
         display: none;
     }
