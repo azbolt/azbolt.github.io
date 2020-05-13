@@ -30,4 +30,4 @@ gulp.task('uncss', function() {
 });
 
 // Scan site, remove unused css
-gulp.task('buildcss', ['uncss']);
+gulp.task('buildcss', gulp.series('uncss'));
