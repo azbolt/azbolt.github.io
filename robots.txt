@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /404
+Allow: /
+
+Sitemap: https://upstackstudio.com/sitemap.xml

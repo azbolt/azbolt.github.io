@@ -1,0 +1,1 @@
+function handleFormSubmit(e){e.preventDefault(),document.getElementById("contact-form").style.display="none",document.getElementById("thankyou_message").style.display="block"}function loaded(){var e=document.getElementById("upstack-v1-form");e.addEventListener("submit",handleFormSubmit,!1)}document.addEventListener("DOMContentLoaded",loaded,!1);
